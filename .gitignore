@@ -85,3 +85,32 @@ share/python-wheels/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Model artifacts
+*.h5
+*.keras
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.joblib
+
+# Frontend dependencies and builds
+node_modules/
+dist/
+
+# IDE and operating system
+.vscode/
+.DS_Store
+Thumbs.db
