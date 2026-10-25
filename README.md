@@ -95,3 +95,34 @@ Major-Project--I/
 - Attention-based multimodal feature fusion
 - Grad-CAM
 - Integrated Gradients
+
+### Frontend Structure
+
+```text
+frontend/
+├── public/
+└── src/
+    ├── assets/
+    ├── components/
+    │   ├── DashboardOverview.tsx
+    │   ├── DiagnosticForm.tsx
+    │   ├── DiagnosticResult.tsx
+    │   ├── ExplainabilityPanel.tsx
+    │   ├── PageFooter.tsx
+    │   ├── Sidebar.tsx
+    │   └── Topbar.tsx
+    ├── hooks/
+    └── services/
+```
+
+**Frontend Components**
+
+- **DashboardOverview.tsx** — Dashboard overview and battery diagnostic summaries.
+- **DiagnosticForm.tsx** — Interface for submitting thermal image and telemetry inputs.
+- **DiagnosticResult.tsx** — Displays battery health predictions and thermal hazard results.
+- **ExplainabilityPanel.tsx** — Presents explainability outputs, including Grad-CAM heatmaps and sensor attributions.
+- **Sidebar.tsx** — Dashboard navigation.
+- **Topbar.tsx** — Dashboard header and top-level controls.
+- **PageFooter.tsx** — Footer section of the dashboard.
+
+The frontend uses React and TypeScript, with Vite for development and building. It communicates with the Python FastAPI backend to retrieve battery diagnostic predictions and explainability results.
