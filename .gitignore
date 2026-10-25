@@ -16,7 +16,8 @@ credentials.json
 # 2. Machine Learning Artifacts
 # ==================================
 # Exclude model weights and architectures
-models/
+models/*
+!models/battery_multimodal_model.keras
 *.keras
 *.h5
 *.hdf5
